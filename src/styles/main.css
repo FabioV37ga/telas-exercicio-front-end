@@ -13,6 +13,11 @@ main h1 {
     margin-bottom: var(--space-sm);
 }
 
+main h2 {
+    font-size: 1.35em;
+    font-weight: 700;
+}
+
 @media (min-width: 800px) {
     main h1 {
         font-size: 1.75rem;
