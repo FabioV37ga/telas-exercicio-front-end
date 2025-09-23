@@ -1,0 +1,120 @@
+header {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: blueviolet; */
+    flex-wrap: wrap;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* Header - parte esquerda */
+
+/* Navegação */
+.header-nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+
+/* Lista dos itens de navegação */
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 375px;
+}
+
+/* Estilização dos itens de navegação */
+.header-nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Item 1 de navegação: Texto HABIT */
+#header-logo {
+    font-weight: 800;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* Header - parte direita*/
+
+/* container do conteúdo a direita */
+.header-right {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Campo de pesquisa textual */
+#header-pesquisa {
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #dfdfdf;
+}
+
+/* Botão "Buscar" */
+.header-botao-pesquisar,
+.header-botao-entrar {
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: var(--verde);
+    padding: 7px 12px;
+    border: 1px solid var(--verde);
+    text-decoration: none;
+    border-radius: 8px
+}
+
+/* Botões do header */
+.header-botao-entrar:hover,
+.header-botao-pesquisar:hover {
+    background: var(--verde);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* Mobile maior */
+@media (min-width: 800px) {
+    header {
+        width: calc(100% - 2 * var(--space-lg));
+        padding: 0 var(--space-lg);
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .header-nav {
+        width: 385px;
+        justify-content: flex-start;
+    }
+
+    .header-nav ul {
+        width: inherit;
+    }
+
+    .header-right {
+        width: 355px;
+    }
+
+    #header-pesquisa {
+        width: 170px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/*  Desktop */
+@media (min-width: 1200px) {
+    header {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
