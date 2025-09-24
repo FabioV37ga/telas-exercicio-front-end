@@ -77,6 +77,22 @@
     color: var(--textoCinza);
 }
 
+@media (min-width: 800px) {
+    .main-categorias-conteudo {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .todas-categorias-item {
+        width: 180px;
+        font-size: 1.1rem;
+    }
+
+    .todas-categorias-item {
+        width: 150px;
+    }
+}
+
 @media (min-width: 1200px) {
     .main-categorias {
         width: 1200px;
@@ -86,6 +102,11 @@
     .main-categorias-conteudo {
         width: 100%;
         max-width: 1200px;
+    }
+
+    .categorias-populares,
+    .todas-categorias {
+        overflow: hidden;
     }
 
     .categorias-populares-container {
