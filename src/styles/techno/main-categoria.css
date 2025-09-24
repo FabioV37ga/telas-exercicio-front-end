@@ -1,0 +1,78 @@
+.main-categoria {
+    margin: 60px var(--space-md);
+    width: calc(100% - 2 * var(--space-md));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-categoria h1{
+    width: 100%;
+}
+
+.tags {
+    width: 370px;
+    height: 40px;
+    ;
+    margin-top: 20px;
+    /* background-color: aqua; */
+}
+
+.tags ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags ul li {
+    background: white;
+    padding: 6px 8px;
+    border-radius: 14px;
+    border: 1px solid var(--bordaCinza);
+}
+
+.postagens {
+    width: 100%;
+    max-width: 775px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.postagem {
+    width: calc(100% / 2 - 10px);
+    height: 200px;
+    background: white;
+    border: 1px solid var(--bordaCinza);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 375px;
+}
+
+.postagem-imagem {
+    width: calc(100% - 26px);
+    margin-top: 13px;
+    height: 120px;
+    background: var(--placeholderCinza);
+    border-radius: 8px;
+}
+
+.postagem-info {
+    width: calc(100% - 26px);
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postagem-info h3{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.postagem-info .data-postagem{
+    font-size: 0.875rem;
+    color: var(--textoCinza);
+}

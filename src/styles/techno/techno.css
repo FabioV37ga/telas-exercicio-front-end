@@ -1,0 +1,17 @@
+main {
+    height: 128vh;
+}
+
+
+@media (min-width: 800px) {
+    main {
+        height: 134vh;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    main {
+        height: 106vh;
+    }
+}
