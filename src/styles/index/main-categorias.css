@@ -110,13 +110,21 @@
 
     .categorias-populares-container {
         width: 100%;
+        justify-content: space-between;
+    }
+
+    .categorias-populares-item {
+        margin-right: 0;
+        width: 385px;
     }
 
     .todas-categorias-container {
         width: 100%;
+        justify-content: space-between;
     }
 
     .todas-categorias-item {
+        margin: 0;
         width: 228px;
         font-size: 1.1rem;
     }
