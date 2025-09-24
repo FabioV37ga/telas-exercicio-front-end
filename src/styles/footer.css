@@ -113,6 +113,10 @@ footer {
         height: 50px;
     }
 
+    .links-footer li a {
+        margin-left: 15px;
+    }
+
     .copyright-footer-container {
         width: 1200px;
     }

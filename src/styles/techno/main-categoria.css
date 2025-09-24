@@ -30,6 +30,7 @@
 }
 
 .postagens {
+    margin-top: 10px;
     width: 100%;
     max-width: 775px;
     display: flex;
@@ -75,4 +76,57 @@
 .postagem-info .data-postagem{
     font-size: 0.875rem;
     color: var(--textoCinza);
+}
+
+.botao-carregar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carregar-mais{
+    padding: 12px 14px;
+    text-decoration: none;
+    background: white;
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    border-radius: 8px;
+}
+
+
+@media (min-width: 800px) {
+    .main-categoria{
+        margin: 60px auto;
+        width: 800px;
+    }
+
+    .postagens{
+        max-width: 100%;
+    }
+
+    .postagem{
+        height: 280px;
+        max-width: 387px;
+    }
+
+    .postagem-imagem{
+        height: 180px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .main-categoria{
+        width: 1200px;
+        padding: 0 var(--space-lg);
+    }
+
+    .postagens {
+        max-width: calc(100% - 2 * var(--space-lg));
+    }
+
+    .postagem {
+        width: calc(100% / 3 - 13px);
+        max-width: none;
+    }
 }
