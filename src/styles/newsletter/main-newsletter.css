@@ -1,0 +1,51 @@
+.main-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px
+}
+
+.main-newsletter-conteudo {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 8px;
+    border:1px var(--bordaCinza) solid;
+    width: 100%;
+    padding: 50px 20px 30px 20px;
+    max-height: 250px;
+    max-width: 490px;
+}
+
+.newsletter-titulo-container{
+    width: calc(100%)
+}
+
+.newsletter-titulo{
+    margin-bottom: var(--space-lg)
+}
+
+.newsletter-email{
+    width: calc(100% - 40px);
+    height: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--bordaCinza);
+    padding: 15px;
+    margin-bottom: var(--space-md)
+}
+
+.newsletter-aceitarTermos{
+    width: 100%;
+    font-size: 13px;
+}
+
+.newsletter-assinar{
+    text-decoration: none;
+    color: white;
+    background: var(--verde);
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
